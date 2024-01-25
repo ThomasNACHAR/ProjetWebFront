@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "css": "tailwindcss build styles.css -o output.css",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
