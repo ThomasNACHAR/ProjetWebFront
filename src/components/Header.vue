@@ -1,7 +1,11 @@
 <script>
 export default {
     methods: {
+        scrollTop() {
+      document.documentElement.scrollTop = 0
+    },
         switchPage(page) {
+            this.scrollTop();
             this.$emit('toggle-page', page);
         } 
     }
