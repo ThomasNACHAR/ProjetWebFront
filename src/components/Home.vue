@@ -133,7 +133,7 @@ export default {
         </div>
     </div>
     <div class="mt-[32rem] flex flex-col justify-center items-center lg:mb-8 mb-16">
-        <h2 class="section-title">Ce qui vous attend !</h2>
+        <h2 class="section-title m-4">Ce qui vous attend !</h2>
         <div class="flex justify-center items-center">
             <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-16 mr-8 ml-8">
                 <img src="@/assets/img/food1.png" alt="Image 1" class="img-foodtour">
