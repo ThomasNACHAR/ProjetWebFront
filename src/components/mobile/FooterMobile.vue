@@ -11,6 +11,7 @@ export default {
     methods: {
         switchPage(page) {
             this.isClicked.menu = false;
+            document.documentElement.scrollTop = 0;
             this.$emit('toggle-page', page);
         } 
     }

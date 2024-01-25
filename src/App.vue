@@ -58,6 +58,7 @@ export default {
   <Partenaires v-if="pageToggled=='partenaires'"></Partenaires>
   <Reservation v-if="pageToggled=='reservation'"></Reservation>
   <Contact v-if="pageToggled=='contact'"></Contact>
+  <div class="mb-20" v-if="isMobile"></div>
   <Footer v-if="!isMobile"></Footer>
   <FooterMobile @toggle-page="togglePage" v-else></FooterMobile>
   

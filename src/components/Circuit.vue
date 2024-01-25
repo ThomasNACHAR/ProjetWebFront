@@ -19,7 +19,7 @@ export default {
             <button @click="scroll" class="home-button">Découvrir</button>
         </div>     
     </div>
-    <div id="startCircuit" class="flex flex-col gap-12 justify-center items-center mt-24 mb-24">
+    <div id="startCircuit" class="flex flex-col gap-12 justify-center items-center mt-24 mb-24 m-4">
         <p>Autour des meilleurs produits locaux et grâce à notre passion commune pour les bonnes choses, découvrez la plus savoureuse des balades gourmandes…</p>
 
         <p>Nous explorerons à pied le charme du quartier emblématique de notre vieux Bourges, les vitrines gastronomiques et viticoles de la ville.</p>
@@ -28,7 +28,7 @@ export default {
     </div>
     <div class="flex flex-col items-center justify-center gap-12 mb-24">
         <h3 class="section-title">Petits rappels</h3>
-        <div class="flex gap-24">
+        <div class="flex flex-col gap-8 2xl:flex-row m-4 2xl:gap-24">
             <div class="flex flex-col  gap-8">
                 <img class="w-24 h-24" src="@/assets/img/horloge.png" alt="">
                 <h4 class="font-bold">Horaire</h4>

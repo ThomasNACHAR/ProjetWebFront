@@ -19,13 +19,13 @@ export default {
             <button @click="scroll" class="home-button">Découvrir</button>
         </div>
     </div>
-    <div id="startReservation" class="flex flex-col justify-center items-center gap-12 mt-24 mb-24">
+    <div id="startReservation" class="flex flex-col justify-center items-center gap-12 m-4 mt-24 mb-24">
         <p>Partez à la découverte de la ville de Bourges par le voyage culinaire. Nos partenaires sont situés dans les quartiers principaux et centraux de notre ville.</p>
         <p>Découvrez, entre autres, les secrets de Bourges mais surtout ses pépites gastronomiques à ne pas louper ! Une visite palpitante qui ravira vos papilles !</p>
     </div>
     <div class="flex flex-col justify-center items-center gap-12 mb-24">
         <h3 class="section-title">Nos tarifs</h3>
-        <div class="flex w-full justify-center items-center">
+        <div class="flex flex-col ms:flex-row w-full justify-center items-center">
             <figure class="bg-pink-500 rounded-[100px] p-8 m-4 w-1/3">
                 <div class="pt-6 space-y-4 flex flex-col justify-center items-center">
                     <blockquote>
@@ -173,8 +173,8 @@ export default {
         <p>Ébauche calendrier</p>
     </div>
     <div class="flex flex-col justify-center items-center">
-        <h2 class="section-title">Offrir</h2>
-        <h3 class="font-bold">Si vous voulez offrir cette succulente balade, obtenez la carte cadeau à imprimer</h3>
+        <h2 class="section-title mt-8">Offrir</h2>
+        <h3 class="m-4 font-bold">Si vous voulez offrir cette succulente balade, obtenez la carte cadeau à imprimer</h3>
         <img src="@/assets/img/carte-cadeau.png" alt="">
         <button class="home-button mt-8 mb-8">Offrez-moi</button>
     </div>

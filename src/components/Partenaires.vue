@@ -24,7 +24,7 @@ export default {
             <button @click="scroll" class="home-button">Découvrir</button>
         </div>     
     </div>
-    <div id="startPartenaires" class="flex flex-col justify-center items-center gap-12 mt-24 mb-24">
+    <div id="startPartenaires" class="flex flex-col justify-center items-center gap-12 m-4 mt-24 mb-24">
         <h3 class="section-title">Découvrez nos partenaires</h3>
         <p>Les meilleurs artisans, commerçants et chefs ont en commun l’amour du produit,
         un savoir-faire et des connaissances spécifiques propres à leur domaine de prédilection.
@@ -33,14 +33,14 @@ export default {
         ainsi qu’inciter à consommer des produits plutôt artisanaux, locaux, savoureux, sains et
         respectueux de l’environnement.</p>
     </div>
-    <div class="flex flex-col justify-center items-center gap-12 mb-24">
+    <div class="flex flex-col justify-center items-center m-4 gap-12 mb-24">
         <h3 class="section-title">Nos 6 partenaires berruyers</h3>
         <p>Pour que vous puissiez découvrir un autre visage du Berry,
         nous avons déniché les meilleurs producteurs et artisans locaux.
         Croquez dans le pâté berrichon fondant et croustillant, savourez
         les arômes de la Villa Monin ou d’un vin Sancerrois. BerryVery Gourmande va vous surprendre !</p>
         <div class="flex justify-center items-center">
-            <div class="grid grid-cols-3 gap-16 ml-8">
+            <div class="grid lg:grid-cols-3 gap-16 ml-8">
                 <img src="@/assets/img/partenaire1.png" alt="Image 1" class="img-foodtour">
                 <img src="@/assets/img/partenaire2.jpeg" alt="Image 2" class="img-foodtour">
                 <img src="@/assets/img/partenaire3.jpeg" alt="Image 3" class="img-foodtour">
