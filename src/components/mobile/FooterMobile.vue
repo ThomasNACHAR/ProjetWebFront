@@ -64,7 +64,7 @@ export default {
 
 <footer class="bg-pink-500 w-full h-12 z-20 fixed bottom-0 left-0">
     <nav class="flex justify-between items-center">
-        <button @click="isClicked.menu=!isClicked.menu" class="ml-28">
+        <button @click="isClicked.menu=!isClicked.menu; isClicked.info=false" class="ml-28">
             <svg v-if="!isClicked.menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="h-12 w-12">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -84,7 +84,7 @@ export default {
 </svg>
 
         </button>
-        <button @click="isClicked.info=!isClicked.info" class="mr-28">
+        <button @click="isClicked.info=!isClicked.info; isClicked.menu=false" class="mr-28">
             <svg v-if="!isClicked.info" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12">
   <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
 </svg>
