@@ -12,16 +12,41 @@ export default {
 </script>
 
 <template>
-    <div class="banner relative flex items-center justify-center">
+    <div class="banner">
         <img src="@/assets/img/home-banner.jpeg" alt="" class="w-full object-cover">
-        <div class="banner-content absolute flex flex-col items-center justify-center">
-            <img src="@/assets/img/bvg.png" alt="" class="mb-4">
-            <h1 class="text-white mb-32 w-full">La balade gourmande du Berry !</h1>
-            <button @click="scroll" class="home-button">Découvrir</button>
-        </div>        
+        <figure class="hidden xs:block bg-pink-500 rounded-[100px] p-8 m-4 absolute">
+                <div class="pt-6 space-y-4">
+                    <blockquote>
+                      <h1 class="flex flex-col">
+  <span class="text-center text-6xl font-bold">BerryVery</span>
+  <span class="text-center text-6xl font-bold">Gourmande</span>
+                      </h1>
+                    </blockquote>
+                    <figcaption class="flex items-center flex-col justify-center">
+                      <h2 class=" mb-4 ml:mb-32 w-full text-center">La balade gourmande du Berry !</h2>
+                      <button @click="scroll" class="home-button">Découvrir</button>
+                    </figcaption>
+                </div>
+            </figure>      
     </div>
-    <div id="figures" class="figures flex justify-center z-2 mt-[-75px] absolute z-10">
-        <figure class="bg-pink-500 rounded-xl p-8 w-1/4 m-4">
+    <div class="small-banner">
+      <figure class="block xs:hidden bg-pink-500 rounded-[100px] p-8 m-4">
+                <div class="pt-6 space-y-4">
+                    <blockquote>
+                      <h1 class="flex flex-col">
+  <span class="text-center text-4xl font-bold">BerryVery</span>
+  <span class="text-center text-4xl font-bold">Gourmande</span>
+                      </h1>
+                    </blockquote>
+                    <figcaption class="flex items-center flex-col justify-center">
+                      <h2 class=" mb-4 ml:mb-32 w-full text-center">La balade gourmande du Berry !</h2>
+                      <button @click="scroll" class="home-button">Découvrir</button>
+                    </figcaption>
+                </div>
+            </figure>   
+    </div>
+    <div id="figures" class="figures flex flex-col gap-8 ml:gap-0 ml:flex-row justify-center z-2 mt-[50px] lg:mt-[-75px] lg:absolute z-10">
+        <figure class="bg-pink-500 rounded-xl p-8 lg:w-1/4 m-4">
   <img class="w-24 h-24 rounded-full mx-auto mt-[-4.6rem]" src="@/assets/img/home-round1.png" alt="" width="384" height="512">
   <div class="pt-6 space-y-4">
     <blockquote>
@@ -36,7 +61,7 @@ export default {
     </figcaption>
   </div>
 </figure>
-<figure class="bg-pink-500 rounded-xl p-8 w-1/4 m-4">
+<figure class="bg-pink-500 rounded-xl p-8 lg:w-1/4 m-4">
   <img class="w-24 h-24 rounded-full mx-auto mt-[-4.6rem]" src="@/assets/img/home-round2.png" alt="" width="384" height="512">
   <div class="pt-6 space-y-4">
     <blockquote>
@@ -51,7 +76,7 @@ export default {
     </figcaption>
   </div>
 </figure>
-<figure class="bg-pink-500 rounded-xl p-8 w-1/4 m-4">
+<figure class="bg-pink-500 rounded-xl p-8 lg:w-1/4 m-4">
   <img class="w-24 h-24 rounded-full mx-auto mt-[-4.6rem]" src="@/assets/img/home-round3.png" alt="" width="384" height="512">
   <div class="pt-6 space-y-4">
     <blockquote>
@@ -67,7 +92,7 @@ export default {
   </div>
 </figure>
     </div>
-    <div class="mt-[30rem] mb-[30rem] flex items-center justify-center">
+    <div class="lg:mt-[30rem] lg:mb-[30rem] mt-[5rem] flex flex-col ml:flex-row items-center justify-center">
         <div class="flex flex-col w-80">
             <h2 class="paragraph-title">Food tour et son concept</h2>
             <p class="w-80 mb-4">Lors d’une balade historique dans la ville de Bourges,
@@ -78,7 +103,7 @@ export default {
                 ce moment unique et insolite !</p>
             <button class="home-button">Réservez !</button>
         </div>
-        <img src='@/assets/img/specialites.jpeg' alt="" class="ml-4 rounded-full">
+        <img src='@/assets/img/specialites.jpeg' alt="" class="ml:ml-4 mt-8 ml:mt-0 rounded-full">
     </div>
     <div class="mt-16">
         <img src='@/assets/img/cathedrale.jpeg' alt="" class="w-full h-[48rem]">
@@ -107,10 +132,10 @@ export default {
             </figure>
         </div>
     </div>
-    <div class="mt-[32rem] flex flex-col justify-center items-center mb-8">
+    <div class="mt-[32rem] flex flex-col justify-center items-center lg:mb-8 mb-16">
         <h2 class="section-title">Ce qui vous attend !</h2>
         <div class="flex justify-center items-center">
-            <div class="grid grid-cols-3 gap-16 ml-8">
+            <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-16 mr-8 ml-8">
                 <img src="@/assets/img/food1.png" alt="Image 1" class="img-foodtour">
                 <img src="@/assets/img/food2.png" alt="Image 2" class="img-foodtour">
                 <img src="@/assets/img/food3.png" alt="Image 3" class="img-foodtour">
@@ -126,6 +151,11 @@ export default {
 </template>
 
 <style>
+
+.banner {
+  @apply relative flex items-center justify-center;
+}
+
 .home-button {
     @apply mr-4 bg-pink-500 border text-black rounded-full px-4 py-2 hover:bg-black hover:text-white transition duration-300 ease-in-out;
 }

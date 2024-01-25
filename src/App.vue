@@ -7,6 +7,7 @@ import Circuit from "@/components/Circuit.vue"
 import Partenaires from "@/components/Partenaires.vue"
 import Reservation from "@/components/Reservation.vue"
 import Contact from "@/components/Contact.vue"
+import FooterMobile from "@/components/mobile/FooterMobile.vue"
 
 export default {
   components: {
@@ -16,7 +17,8 @@ export default {
     Circuit,
     Partenaires,
     Reservation,
-    Contact
+    Contact,
+    FooterMobile
   },
   data() {
     return {
@@ -49,15 +51,15 @@ export default {
 </script>
 
 <template>
-  
   <Header @toggle-page="togglePage" v-if="!isMobile"></Header>
   <button v-if="!isTop" @click="scrollTop">appuyez !</button>
-  <Home v-if="pageToggled=='home'&&!isMobile"></Home>
+  <Home v-if="pageToggled=='home'"></Home>
   <Circuit v-if="pageToggled=='circuit'"></Circuit>
   <Partenaires v-if="pageToggled=='partenaires'"></Partenaires>
   <Reservation v-if="pageToggled=='reservation'"></Reservation>
   <Contact v-if="pageToggled=='contact'"></Contact>
   <Footer v-if="!isMobile"></Footer>
+  <FooterMobile @toggle-page="togglePage" v-else></FooterMobile>
   
 </template>
 

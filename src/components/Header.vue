@@ -9,8 +9,8 @@ export default {
 </script>
 
 <template>
-    <header class="bg-pink-500 p-4 h-60 flex items-center justify-between">
-        <img alt="" class="w-52 h-52" src="@/assets/img/logo.svg">
+    <header class="header sticky top-0">
+        <img alt="" class="w-12 h-12" src="@/assets/img/logononame.svg">
         <nav class="flex items-center justify-between">
             <button class="nav-button" @click="switchPage('home')">ACCUEIL</button>
             <button class="nav-button" @click="switchPage('circuit')">CIRCUIT</button>
@@ -25,7 +25,9 @@ export default {
 </template>
 
 <style>
-
+.header {
+    @apply bg-pink-500 p-4 h-16 flex items-center justify-between fixed top-0 left-0 w-full z-20;
+}
 .nav-button {
     @apply mr-4 bg-transparent border border-white text-white rounded-full px-4 py-2 hover:bg-white hover:text-black transition duration-300 ease-in-out;
 }
