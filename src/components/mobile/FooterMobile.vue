@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-<nav v-if="isClicked.menu" class="bg-pink-500 border-2 border-white w-full h-1/3 fixed z-20 bottom-0 left-0 mb-[4rem] rounded-[100px] grid">
+<nav v-if="isClicked.menu" class="bg-pink-500 border-2 border-white w-full h-88 fixed z-20 bottom-0 left-0 mb-[4rem] rounded-[100px] grid">
             <button class="menu-button" @click="switchPage('home')">ACCUEIL</button>
             <button class="menu-button" @click="switchPage('circuit')">CIRCUIT</button>
             <button class="menu-button" @click="switchPage('partenaires')">PARTENAIRES</button>

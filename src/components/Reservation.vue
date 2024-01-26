@@ -26,7 +26,7 @@ export default {
     <div class="flex flex-col justify-center items-center gap-12 mb-24">
         <h3 class="section-title">Nos tarifs</h3>
         <div class="flex flex-col ms:flex-row w-full justify-center items-center">
-            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 w-1/3">
+            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 ms:w-1/3">
                 <div class="pt-6 space-y-4 flex flex-col justify-center items-center">
                     <blockquote>
                     <p class="text-center text-3xl font-bold">
@@ -72,7 +72,7 @@ export default {
                     <button class="home-button w-full mt-8">Réserver</button>
                 </div>
             </figure>
-            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 w-1/3">
+            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 ms:w-1/3">
                 <div class="pt-6 space-y-4 flex flex-col justify-center items-center">
                     <blockquote>
                     <p class="text-center text-3xl font-bold">
@@ -118,7 +118,7 @@ export default {
                     <button class="home-button w-full mt-8">Réserver</button>
                 </div>
             </figure>
-            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 w-1/3">
+            <figure class="bg-pink-500 rounded-[100px] p-8 m-4 ms:w-1/3">
                 <div class="pt-6 space-y-4 flex flex-col justify-center items-center">
                     <blockquote>
                     <p class="text-center text-3xl font-bold">
